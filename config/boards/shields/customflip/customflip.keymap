@@ -32,9 +32,9 @@
 		};
 		nav_layer { // Navigation
 			bindings = <
-			&kp TAB	   &kp F9		 &kp F10		&kp F11		&kp F12	   &to DEFAULT		&trans		 &trans		&kp HOME	 &kp UP			&kp END		&none
-			&trans	   &kp F5		 &kp F6			&kp F7		&kp F8	   &kp LWIN			&trans		 &trans		&kp LEFT	 &kp DOWN		&kp RIGHT	&none
-			&trans	   &kp F1		 &kp F2			&kp F3		&kp F4	   &trans			&trans		 &trans		&none		 &none			&none		&none
+			&kp TAB	   &kp F9		 &kp F10		&kp F11		&kp F12	   &to DEFAULT		&trans		 &trans		&kp HOME	 &kp UP			&kp END		&bt BT_SEL 0
+			&trans	   &kp F5		 &kp F6			&kp F7		&kp F8	   &kp LWIN			&trans		 &trans		&kp LEFT	 &kp DOWN		&kp RIGHT	&bt BT_CLR
+			&trans	   &kp F1		 &kp F2			&kp F3		&kp F4	   &trans			&trans		 &trans		&none		 &none			&none		&bt BT_SEL 1
 			>;
 		};
 		osl_layer {// ONE SHOT LAYER 
