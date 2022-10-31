@@ -38,14 +38,14 @@
         };
         NAV_COMS: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "Layer nav orcpms";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&to NAV>, <&sl CONMGMT>;
         };
         Q_ESC: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "q_ESC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>;
