@@ -50,14 +50,22 @@
             tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>;
         };
+		COMMA_ESC: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMMA_ESC";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp ESC>;
+        };
         
         // MOD_LSFT, MOD_RSFT, MOD_LCTL, MOD_RCTL, MOD_LALT, MOD_RALT, MOD_LGUI, MOD_RGUI
-        gresc: grave_escape {
+        bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
-            5 = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
     
@@ -67,16 +75,16 @@
 		
 		DVORAC{
 			bindings = <
-				&Q_ESC			&kp W		&kp E			&kp R			&kp T		&SHFT_CAP		&NAV_COMS		&kp Y		&kp U		&kp I			&kp O			&kp P
-				&kp A			&kp S		&kp D			&kp F			&kp G		&kp SPC			&kp RET			&kp H		&kp J		&kp K			&kp L			&kp BSPC
-				&kp Z			&kp X		&kp C			&kp V			&kp B		&sl OSL			&to NUMS		&kp N		&kp M		&kp COMMA		&kp DOT			&kp RCTL
+				&COMMA_ESC		&kp W		&kp E			&kp P			&kp Y		&SHFT_CAP		&NAV_COMS		&kp F		&kp G		&kp C			&kp R			&kp L
+				&kp A			&kp O		&kp E			&kp U			&kp I		&kp SPC			&kp RET			&kp D		&kp H		&kp T			&kp N			&kp S
+				&bspc_del		&kp Q		&kp J			&kp K			&kp X		&sl OSL			&to NUMS		&kp B		&kp M		&kp W			&kp V			&kp Z
 			>;
 		
 		};
 		QWERTY { // QWERTY
 			bindings = <
 				&Q_ESC			&kp W		&kp E			&kp R			&kp T		&SHFT_CAP		&NAV_COMS		&kp Y		&kp U		&kp I			&kp O			&kp P
-				&kp A			&kp S		&kp D			&kp F			&kp G		&kp SPC			&kp RET			&kp H		&kp J		&kp K			&kp L			&kp BSPC
+				&kp A			&kp S		&kp D			&kp F			&kp G		&kp SPC			&kp RET			&kp H		&kp J		&kp K			&kp L			&bspc_del
 				&kp Z			&kp X		&kp C			&kp V			&kp B		&sl OSL			&to NUMS		&kp N		&kp M		&kp COMMA		&kp DOT			&kp RCTL
 			>;
 		};
