@@ -1,9 +1,5 @@
-#include <dt-bindings/zmk/backlight.h>
-&pwm0 {
-    status = "okay";
-    ch0-pin = <45>;
-    /* ch0-inverted; */
-};
+ #include <dt-bindings/zmk/backlight.h>
+ #include <dt-bindings/led/led.h>
 
 / {
     chosen {
@@ -17,4 +13,10 @@
             label = "Backlight LED 0";
         };
     };
+};
+
+&pwm0 {
+    status = "okay";
+    ch0-pin = <45>;
+    /* ch0-inverted; */
 };
