@@ -106,9 +106,9 @@
 		};
 		osl_layer {// ONE SHOT LAYER 
 			bindings = <
-				&trans		&trans		 &trans		  		&kp LC(H)   	&trans   &sk LALT	  &trans  &trans  &trans	 &trans	   &trans	 &trans
-				&kp LC(A)	&LC(S)		 &kp LC(C)			&kp LC(V)   	&trans   &sk LWIN	  &trans  &trans  &trans	 &trans	   &trans	 &trans
-				&kp LC(Z)	&kp LC(X)	 &kp LC(LS(C))		&kp LC(LS(V))   &trans   &sk LCTL	  &trans  &trans  &trans	 &trans	   &trans	 &trans
+				&trans		&trans		&trans				&kp LC(H)   	&trans   &sk LALT	  &trans  &trans  &trans	 &trans	   &trans	 &trans
+				&kp LC(A)	&LC(S)		&kp LC(C)			&kp LC(V)   	&trans   &sk LWIN	  &trans  &trans  &trans	 &trans	   &trans	 &trans
+				&kp LC(Z)	&kp LC(X)	&kp LC(LS(C))		&kp LC(LS(V))   &trans   &sk LCTL	  &trans  &trans  &trans	 &trans	   &trans	 &trans
 			>;
 		};
 		connection_mgmt {// Connection managment 
