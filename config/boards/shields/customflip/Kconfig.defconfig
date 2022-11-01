@@ -3,6 +3,13 @@ if SHIELD_CUSTOMFLIP_LEFT
 config ZMK_KEYBOARD_NAME
     default "Brendan's KBD"
 
+if ZMK_BACKLIGHT
+
+config LED_GPIO
+    default y
+
+endif # ZMK_BACKLIGHT
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
