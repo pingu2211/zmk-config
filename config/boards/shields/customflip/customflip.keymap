@@ -115,7 +115,7 @@
 			bindings = <
 				&kp TAB	   &kp F9		 &kp F10		&kp F11		&kp F12								&none		&kp HOME	&kp UP		&kp END		&kp PG_UP
 				&none	   &kp F5		 &kp F6			&kp F7		&kp F8								&none		&kp LEFT	&kp DOWN	&kp RIGHT	&none
-				&none	   &kp F1		 &kp F2			&kp F3		&kp F4								&none		&none		&none		&none		&kp PG_FN
+				&none	   &kp F1		 &kp F2			&kp F3		&kp F4								&none		&none		&none		&none		&kp PG_DN
 														&to DEFAULT	&kp LWIN	%kp LSHFT	&kp LCTL 	&trans		&to NUMS
 			>;
 		};
