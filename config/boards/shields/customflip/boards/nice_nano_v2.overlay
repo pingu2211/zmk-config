@@ -2,3 +2,17 @@
     status = "okay";
     ch0-pin = <15>;
 };
+
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+    };
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        label = "Backlight LEDs";
+        pwm_led_0 {
+            pwms = <&pwm0 15>;
+            label = "Backlight LED 0";
+        };
+    };
+};
